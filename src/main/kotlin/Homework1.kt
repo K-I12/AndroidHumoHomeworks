@@ -1,62 +1,66 @@
-
 fun homework1() {
     // Задача №1
     println("Введите своё имя \nname = ")
-    val name: String = readLine().toString()
+    val name: String = readln()
 
     println("Привет, $name!")
 
-
     // Задача №2
     println("Введите первое значение \nа = ")
-    val a: Int = readLine().toString().toInt()
+    val a: Int? = readln().toIntOrNull()
 
     println("Введите второе значение \nb = ")
-    val b: Int = readLine().toString().toInt()
+    val b: Int? = readln().toIntOrNull()
 
-    val c: Int = a + b
-
-    println("Сумма: \n$a + $b = $c")
-
+    if (a != null && b != null) {
+        println("Сумма: \n$a + $b = ${a + b}")
+    } else {
+        println("Неправильные данные!")
+    }
 
     // Задача №3
     println("Введите своё имя \nfirstName = ")
-    val firstName: String = readLine().toString()
+    val firstName: String = readln()
 
     println("Введите свою фамилию \nlastName = ")
-    val lastName: String = readLine().toString()
+    val lastName: String = readln()
 
     println("Полное имя: \n$firstName $lastName")
 
-
     // Задача №4
     println("Введите ширину: \nwidth = ")
-    val width:Double = readLine().toString().toDouble()
+    val width: Double? = readln().toDoubleOrNull()
 
     println("Введите высоту: \nheight = ")
-    val height:Double = readLine().toString().toDouble()
+    val height: Double? = readln().toDoubleOrNull()
 
-    val perimeter: Double = width * height
-
-    println("Площадь прямоугольника: \n$width * $height = $perimeter")
+    if (width != null && height != null) {
+        println("Площадь прямоугольника: \n$width * $height = ${width * height}")
+    } else {
+        println("Неправильные данные!")
+    }
 
     // Задача №5
     println("Введите свой год рождения: \nyearOfBirth = ")
-    val yearOfBirth: Int = readLine().toString().toInt()
+    val yearOfBirth: Int? = readln().toIntOrNull()
 
     println("Введите текущий год: \nyearOfBirth = ")
-    val currentYear: Int = readLine().toString().toInt()
+    val currentYear: Int? = readln().toIntOrNull()
 
-    val res: Int = currentYear - yearOfBirth
-
-    println("Ваш возраст: \n$res")
+    if (currentYear != null && yearOfBirth != null) {
+        println("Ваш возраст: \n${currentYear - yearOfBirth}")
+    } else {
+        println("Неправильные данные!")
+    }
 
 
     //Задача №6
     println("Введите свой рост в сантиметрах")
-    val heightInCm: Double = readLine().toString().toDouble()
+    val heightInCm: Double? = readln().toDoubleOrNull()
 
-    val heightInM: Double = heightInCm / 100
-
-    println("Ваш рост в метрах: \n$heightInM")
+    if (heightInCm != null) {
+        println("Ваш рост в метрах: \n${heightInCm / 100}")
+    } else {
+        println("Неправильные данные!")
+    }
 }

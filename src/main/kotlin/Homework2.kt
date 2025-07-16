@@ -1,7 +1,7 @@
 fun homework2() {
     // Задача 1
     print("Лутфан, як адад ворид кунед: ")
-    val number = readLine()!!.toIntOrNull()
+    val number = readln().toIntOrNull()
 
     if (number != null) {
         if (number > 0) {
@@ -17,8 +17,7 @@ fun homework2() {
 
     // Задача 2
     print("Лутфан, синни худро ворид кунед: ")
-
-    val age = readLine()!!.toIntOrNull()
+    val age = readln().toIntOrNull()
 
     if (age != null && age >= 0) {
         when (age) {
@@ -33,10 +32,10 @@ fun homework2() {
 
     // Задача 3
     print("Лутфан, адади якумро ворид кунед: ")
-    val num1 = readLine()!!.toIntOrNull()
+    val num1 = readln().toIntOrNull()
 
     print("Лутфан, адади дуюмро ворид кунед: ")
-    val num2 = readLine()!!.toIntOrNull()
+    val num2 = readln().toIntOrNull()
 
     if (num1 != null && num2 != null) {
         if (num1 > num2) {
@@ -52,7 +51,7 @@ fun homework2() {
 
     //Задача 4
     print("Лутфан, рақами рӯзи ҳафтаро ворид кунед (аз 1 то 7): ")
-    val dayNumber = readLine()!!.toIntOrNull()
+    val dayNumber = readln().toIntOrNull()
 
     if (dayNumber != null) {
         when (dayNumber) {
@@ -71,9 +70,9 @@ fun homework2() {
 
     // Задача 5
     print("Лутфан, як ҳарфро ворид кунед: ")
-    val input = readLine()
+    val input = readln()
 
-    if (input != null && input.length == 1) {
+    if (input.length == 1) {
         when (input[0]) {
             'a', 'e', 'i', 'o', 'u',
             'A', 'E', 'I', 'O', 'U', -> println("Ин ҳарф садонок аст.")

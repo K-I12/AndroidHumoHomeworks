@@ -10,9 +10,9 @@ import sumNumbers
 
 fun main() {
 
-//    homework1()
-//    homework2()
-//    homework3()
+    homework1()
+    homework2()
+    homework3()
 
     /*
     1. Функсия чист?
@@ -39,7 +39,7 @@ fun main() {
     // Задача №7
     val num = isEven(15)
 
-    if(num) {
+    if (num) {
         println("Ина адад ҷуфт аст")
     } else {
         println("Ина адад ҷуфт нест")
